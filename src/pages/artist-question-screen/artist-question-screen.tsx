@@ -60,4 +60,4 @@ function ArtistQuestionScreen(): JSX.Element {
   );
 }
 
-export default ArtistQuestionScreen
+export default ArtistQuestionScreen;
