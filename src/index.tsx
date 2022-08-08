@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Provider} from 'react-redux';
 import App from './components/app/app';
-import {questions} from './mocks/questions';
 import {store} from './store';
 
 const Setting = {
@@ -16,10 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store = {store}>
-      <App
-        errorsCount = {Setting.ERRORS_COUNT}
-        questions = {questions}
-      />
+      <App errorsCount = {Setting.ERRORS_COUNT} />
     </Provider>
   </React.StrictMode>,
 );
