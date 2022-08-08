@@ -1,5 +1,5 @@
 import {Route, BrowserRouter, Routes} from 'react-router-dom';
-import {AppRoute, AuthorizationStatus} from '../../const';
+import {AppRoute, AuthorizationStatus, MAX_MISTAKE_COUNT} from '../../const';
 import WelcomeScreen from '../../pages/welcome-screen/welcome-screen';
 import AuthScreen from '../../pages/auth-screen/auth-screen';
 import GameOverScreen from '../../pages/game-over-screen/game-over-screen';
@@ -8,17 +8,13 @@ import NotFoundScreen from '../../pages/not-found-screen/not-found-screen';
 import PrivateRoute from '../private-route/private-route';
 import GameScreen from '../../pages/game-screen/game-screen';
 
-type AppScreenProps = {
-  errorsCount: number;
-}
-
-function App({errorsCount}: AppScreenProps): JSX.Element {
+function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
         <Route
           path={AppRoute.Root}
-          element={<WelcomeScreen errorsCount={errorsCount} />}
+          element={<WelcomeScreen errorsCount={MAX_MISTAKE_COUNT} />}
         />
         <Route
           path={AppRoute.Login}
