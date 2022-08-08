@@ -20,7 +20,7 @@ function GameScreen(): JSX.Element {
   const dispatch = useAppDispatch();
 
   if (mistakes >= MAX_MISTAKE_COUNT) {
-    return <Navigate to={AppRoute.Lose} />;
+    return <Navigate to={AppRoute.Result} />;
   }
 
   if (step >= questions.length || !question) {
