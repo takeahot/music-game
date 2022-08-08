@@ -1,6 +1,6 @@
 import {ChangeEvent, PropsWithChildren} from 'react';
 import Logo from '../../components/logo/logo';
-import {QuestionArtist, UserArtistQuestionAnswer} from '../../types/questions';
+import {QuestionArtist, UserArtistQuestionAnswer} from '../../types/question';
 
 type ArtistQuestionScreenProps = PropsWithChildren<{
   question: QuestionArtist,

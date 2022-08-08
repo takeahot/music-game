@@ -2,7 +2,7 @@ import {createReducer} from '@reduxjs/toolkit';
 import {incrementStep, checkUserAnswer, loadQuestions, requireAuthorization, resetGame} from './action';
 import {isAnswerCorrect} from '../game';
 import {FIRST_GAME_STEP, AuthorizationStatus} from '../const';
-import { Questions } from '../types/questions';
+import { Questions } from '../types/question';
 
 const STEP_COUNT = 1;
 

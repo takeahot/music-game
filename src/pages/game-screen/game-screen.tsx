@@ -5,7 +5,7 @@ import {AppRoute, GameType, MAX_MISTAKE_COUNT} from '../../const';
 import ArtistQuestionScreen from '../artist-question-screen/artist-question-screen';
 import GenreQuestionScreen from '../genre-question-screen/genre-question-screen';
 import Mistakes from '../../components/mistakes/mistakes';
-import {QuestionArtist, QuestionGenre, Question, UserAnswer} from '../../types/questions';
+import {QuestionArtist, QuestionGenre, Question, UserAnswer} from '../../types/question';
 import withAudioPlayer from '../../hocs/with-audio-player/with-audio-player';
 
 const ArtistQuestionScreenWrapped = withAudioPlayer(ArtistQuestionScreen);
