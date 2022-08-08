@@ -1,4 +1,4 @@
-import {Question, QuestionArtist, QuestionGenre, UserArtistQuestionAnswer, UserGenreQuestionAnswer, UserAnswer} from './types/question';
+import {Question, QuestionArtist, QuestionGenre, UserArtistQuestionAnswer, UserGenreQuestionAnswer, UserAnswer} from './types/questions';
 import {GameType} from './const';
 
 export const isAnswerCorrect = (question: Question, answer: UserAnswer): boolean => {

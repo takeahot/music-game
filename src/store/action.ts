@@ -1,5 +1,5 @@
 import {createAction} from '@reduxjs/toolkit';
-import {Question, Questions, UserAnswer} from '../types/question';
+import {Question, Questions, UserAnswer} from '../types/questions';
 import {AuthorizationStatus} from '../const';
 
 export const incrementStep = createAction('game/incrementStep');

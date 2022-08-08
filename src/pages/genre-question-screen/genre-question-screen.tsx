@@ -1,6 +1,6 @@
 import {useState, FormEvent, ChangeEvent, PropsWithChildren} from 'react';
 import Logo from '../../components/logo/logo';
-import {QuestionGenre, UserGenreQuestionAnswer} from '../../types/question';
+import {QuestionGenre, UserGenreQuestionAnswer} from '../../types/questions';
 
 type GenreQuestionScreenProps = PropsWithChildren<{
   question: QuestionGenre;
