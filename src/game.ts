@@ -19,4 +19,4 @@ export const isArtistAnswerCorrect = (question: QuestionArtist, userAnswer: User
 export const isGenreAnswerCorrect = (question: QuestionGenre, userAnswer: UserGenreQuestionAnswer): boolean =>
   userAnswer.every((answer, index) =>
     answer === (question.answers[index].genre === question.genre));
-    
+
