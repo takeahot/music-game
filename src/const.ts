@@ -6,8 +6,10 @@ export enum AppRoute {
   Result = '/result',
   Root = '/',
   DevArtist = '/dev-artist',
-  DevGenre = '/dev-genre'
+  DevGenre = '/dev-genre',
+  Game = '/game'
 }
+
 export enum AuthorizationStatus {
   Auth = 'AUTH',
   NoAuth = 'NO_AUTH',
