@@ -1,4 +1,5 @@
-import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import {Route , unstable_HistoryRouter as HistoryRouter , Routes} from 'react-router-dom';
+import browserHistory from '../../browser-history';
 import {useAppSelector} from '../../hooks';
 import {AppRoute, MAX_MISTAKE_COUNT} from '../../const';
 import WelcomeScreen from '../../pages/welcome-screen/welcome-screen';
@@ -21,7 +22,7 @@ function App(): JSX.Element {
   }
 
   return (
-    <BrowserRouter>
+    <HistoryRouter history={browserHistory}>
       <Routes>
         <Route
           path={AppRoute.Root}
@@ -56,7 +57,7 @@ function App(): JSX.Element {
           element={<NotFoundScreen />}
         />
       </Routes>
-    </BrowserRouter>
+    </HistoryRouter>
   );
 }
 
