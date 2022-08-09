@@ -16,3 +16,4 @@ export const useUserAnswers = (question: QuestionGenre): ResultUserAnswers => {
 
   return [answers, handleAnswerChange];
 };
+
