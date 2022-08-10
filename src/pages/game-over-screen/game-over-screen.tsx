@@ -1,7 +1,7 @@
 import {useNavigate} from 'react-router-dom';
 import {useAppDispatch} from '../../hooks';
-import {resetGame} from '../../store/action';
 import {AppRoute} from '../../const';
+import { resetGame } from '../../store/game-process/game-process'
 
 function GameOverScreen(): JSX.Element {
   const dispatch = useAppDispatch();
@@ -16,7 +16,7 @@ function GameOverScreen(): JSX.Element {
       <p className="result__total result__total--fail">У вас закончились все попытки. Ничего, повезёт в следующий раз!</p>
       <button
         onClick={() => {
-          // dispatch(resetGame());
+          dispatch(resetGame());
           navigate(AppRoute.Game);
         }}
         className="replay"
