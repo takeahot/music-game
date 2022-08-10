@@ -11,9 +11,12 @@ import PrivateRoute from '../private-route/private-route';
 import GameScreen from '../../pages/game-screen/game-screen';
 import LoadingScreen from '../../pages/loading-screen/loading-screen';
 import {isCheckedAuth} from '../../game';
+import { getAuthorizationStatus } from '../../store/user-process/selectors';
+import { getLoadedDataStatus } from '../../store/game-data/selectors';
 
 function App(): JSX.Element {
-  const {authorizationStatus, isDataLoaded} = useAppSelector((state) => state);
+  const authorizationStatus = useAppSelector (getAuthorizationStatus)
+  const isDataLoaded = useAppSelector(getLoadedDataStatus)
 
   if (isCheckedAuth(authorizationStatus) || isDataLoaded) {
     return (
