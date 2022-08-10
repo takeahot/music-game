@@ -15,8 +15,8 @@ import { getAuthorizationStatus } from '../../store/user-process/selectors';
 import { getLoadedDataStatus } from '../../store/game-data/selectors';
 
 function App(): JSX.Element {
-  const authorizationStatus = useAppSelector (getAuthorizationStatus)
-  const isDataLoaded = useAppSelector(getLoadedDataStatus)
+  const authorizationStatus = useAppSelector (getAuthorizationStatus);
+  const isDataLoaded = useAppSelector(getLoadedDataStatus);
 
   if (isCheckedAuth(authorizationStatus) || isDataLoaded) {
     return (

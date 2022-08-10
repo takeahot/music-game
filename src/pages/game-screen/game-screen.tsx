@@ -16,7 +16,7 @@ const GenreQuestionScreenWrapped = withAudioPlayer(GenreQuestionScreen);
 
 function GameScreen(): JSX.Element {
   const step = useAppSelector(getStep);
-  const mistakes  = useAppSelector(getMistakeCount);
+  const mistakes = useAppSelector(getMistakeCount);
   const questions = useAppSelector(getQuestions);
 
 

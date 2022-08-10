@@ -1,7 +1,7 @@
 import {useNavigate} from 'react-router-dom';
 import {useAppDispatch} from '../../hooks';
 import {AppRoute} from '../../const';
-import { resetGame } from '../../store/game-process/game-process'
+import { resetGame } from '../../store/game-process/game-process';
 
 function GameOverScreen(): JSX.Element {
   const dispatch = useAppDispatch();

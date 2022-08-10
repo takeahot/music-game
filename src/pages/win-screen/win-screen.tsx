@@ -3,7 +3,7 @@ import {useAppSelector, useAppDispatch} from '../../hooks';
 import {resetGame} from '../../store/game-process/game-process';
 import {logoutAction} from '../../store/api-actions';
 import {AppRoute} from '../../const';
-import { getStep , getMistakeCount } from '../../store/game-process/selectors'
+import { getStep , getMistakeCount } from '../../store/game-process/selectors';
 
 function WinScreen(): JSX.Element {
   const step = useAppSelector(getStep);
