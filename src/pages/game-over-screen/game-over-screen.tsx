@@ -16,7 +16,7 @@ function GameOverScreen(): JSX.Element {
       <p className="result__total result__total--fail">У вас закончились все попытки. Ничего, повезёт в следующий раз!</p>
       <button
         onClick={() => {
-          dispatch(resetGame());
+          // dispatch(resetGame());
           navigate(AppRoute.Game);
         }}
         className="replay"

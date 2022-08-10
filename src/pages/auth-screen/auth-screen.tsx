@@ -13,7 +13,7 @@ function AuthScreen(): JSX.Element {
   const navigate = useNavigate();
 
   const onSubmit = (authData: AuthData) => {
-    dispatch(loginAction(authData));
+    // dispatch(loginAction(authData));
   };
 
   const handleSubmit = (evt: FormEvent<HTMLFormElement>) => {
