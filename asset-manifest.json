@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/music-game/static/css/main.3d10672c.css",
-    "main.js": "/music-game/static/js/main.10282bd2.js",
+    "main.js": "/music-game/static/js/main.2f22c3e2.js",
     "index.html": "/music-game/index.html",
     "main.3d10672c.css.map": "/music-game/static/css/main.3d10672c.css.map",
-    "main.10282bd2.js.map": "/music-game/static/js/main.10282bd2.js.map"
+    "main.2f22c3e2.js.map": "/music-game/static/js/main.2f22c3e2.js.map"
   },
   "entrypoints": [
     "static/css/main.3d10672c.css",
-    "static/js/main.10282bd2.js"
+    "static/js/main.2f22c3e2.js"
   ]
 }
