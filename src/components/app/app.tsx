@@ -25,7 +25,7 @@ function App(): JSX.Element {
   }
 
   return (
-    <HistoryRouter history={browserHistory}>
+    <HistoryRouter basename="/music-game" history={browserHistory}>
       <Routes>
         <Route
           path={AppRoute.Root}
